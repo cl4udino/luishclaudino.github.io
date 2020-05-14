@@ -1,0 +1,224 @@
+/* font-family: 'Kalam', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+/* Se a tela tiver no minimo 400px de largura */
+@media (min-width: 400px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+header {
+  background-image: url('../img/fabian-grohs-U0tBTn8UR8I-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(21, 21, 21);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header div{
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+
+.titulo {
+  transform: translateX(30vh);
+  opacity: 0;
+  animation: linear 700ms animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo{
+  100%{
+    transform: scale(1) translateX(20vh);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 750px){
+  header {
+    background-image: none;
+    background-color: rgba(21, 21, 21);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header div{
+    margin-left: auto;
+
+    align-self: center;
+  }
+}
+
+.menu {
+  background-color: rgba(30, 30, 30);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #F0DB4F;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 300ms;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: #F0DB4F;
+  color: rgba(30, 30, 30);
+}
+
+.site-title {
+  color: beige;
+  -webkit-text-stroke: 1.5px rgba(21, 21, 21);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-subtitle {
+  color: beige;
+  -webkit-text-stroke: 0.5px rgba(21, 21, 21);
+  font-style: italic;
+  font-weight: lighter;
+  text-align: right;
+  line-height: 2em;
+  font-size: 1.5em;
+  font-family: 'Kalam', cursive;
+}
+
+@media (max-width: 600px){
+
+  .site-subtitle {
+    text-align: center;
+  }
+}
+
+.sobre {
+  background-color: rgba(30, 30, 30);
+  color: beige;
+  padding: 2em 2em;
+  min-height: 100vh;
+}
+
+.sobre h4{
+  font-size: 1.3em;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.sobre ul{
+  padding-top: 0.75em;
+  padding-left: 2.5em;
+  padding-bottom: 1em;
+}
+
+.sobre li {
+  font-size: 0.9em;
+  list-style: none;
+}
+
+.projetos{
+  background-image: url('../img/lampada.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -150px top 10px;
+  background-color: rgba(30, 30, 30);
+  color: beige;
+  padding: 2em 2em;
+  min-height: 100vh;
+}
+
+.sobre h2,
+.contato h2,
+.projetos h2{
+  color: #F0DB4F;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.projetos .grid {
+  display: grid;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+@media (min-width: 580px){
+  .projetos{
+    background-position: right -220px bottom -10px;
+  }
+
+  .projetos .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+.projetos figure {
+  text-align: center;
+}
+
+.img-projetos {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  transition: transfom 500ms;
+}
+
+.img-projetos:hover {
+  transform: scale(1.10);
+}
+
+.contato {
+  background-color: rgba(21, 21, 21);
+  padding: 1em 2em;
+  max-height: 50vh;
+}
+
+.contato a{
+  color: whitesmoke;
+  font-size: 2.5em;
+  text-decoration: none;
+  transition: text-shadow 300ms;
+}
+
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  color: #F0DB4F;
+  text-shadow: 0px 0px 50px rgb(212, 189, 38);
+}
+
+.contato .icons{
+  text-align: center;
+}
