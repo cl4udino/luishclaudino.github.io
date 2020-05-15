@@ -24,6 +24,14 @@
         </header>
         <section class="sobre" id="sobre">
             <h2>Sobre</h2>
+
+            <figure class="avatar">
+                <img src="./img/I_M2zwQY_400x400.jpg" alt="Luis Henrique">
+            </figure>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque, sed hic repudiandae voluptatem beatae id reiciendis. Molestiae sapiente, officia vel nesciunt incidunt aperiam ad consequatur cupiditate harum! Cum, fuga?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, nesciunt labore adipisci nihil fuga praesentium voluptates minus obcaecati debitis omnis exercitationem sequi, consectetur est nobis esse quibusdam facilis atque magnam?
+            </p>
             <h4>Formação</h4>
             <ul>
                 <li> Bacharel em Engenharia de Computação - UFMS (2017) </li>
@@ -31,9 +39,24 @@
             </ul>
             <h4>Cursos</h4>
             <ul>
-                <li> Git e GitHub - Alura </li>
-                <li> Formação Python - Alura </li>
+                <li>Alura <button id="myBtn">Veja as Certificações</button> </li>
             </ul>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <p>Certificações Alura</p>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the Modal Body</p>
+                        <p>Some other text...</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section class="projetos" id="projetos">
             <h2>Projetos</h2>
@@ -63,15 +86,16 @@
                 <a href="https://github.com/cl4udino" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-
                 <a href="https://www.linkedin.com/in/luishclaudino/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
-
                 <a href="mailto:lhcs10@gmail.com">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </section>
+        <script type="text/javascript" src="./scripts/index.js"></script>
     </body>
 </html>
+
+<!-- https://www.w3schools.com/howto/howto_js_progressbar.asp -->

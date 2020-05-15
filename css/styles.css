@@ -37,20 +37,20 @@ header {
 }
 
 header div{
-  margin-left: auto;
+  margin-left: 40vw;
   margin-right: auto;
   align-self: center;
 }
 
 .titulo {
-  transform: translateX(30vh);
+  transform: translateX(5vw);
   opacity: 0;
   animation: linear 700ms animacaoTitulo forwards;
 }
 
 @keyframes animacaoTitulo{
   100%{
-    transform: scale(1) translateX(20vh);
+    transform: scale(1) translateX(0);
     opacity: 1;
   }
 }
@@ -71,7 +71,7 @@ header div{
 }
 
 .menu {
-  background-color: rgba(30, 30, 30);
+  background-color: rgb(228, 206, 7);
   position: fixed;
   top: 0;
   width: 100vw;
@@ -88,7 +88,7 @@ header div{
 }
 
 .menu a {
-  color: #F0DB4F;
+  color: rgba(30, 30, 30);
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -97,8 +97,8 @@ header div{
 
 .menu a:active,
 .menu a:hover {
-  background-color: #F0DB4F;
-  color: rgba(30, 30, 30);
+  background-color: rgba(30, 30, 30);
+  color: rgb(228, 206, 7);
 }
 
 .site-title {
@@ -127,14 +127,23 @@ header div{
 }
 
 .sobre {
-  background-color: rgba(30, 30, 30);
+  position: relative;
+  background-color: rgba(25, 25, 25);
   color: beige;
   padding: 2em 2em;
   min-height: 100vh;
+  font-size: 1em;
+}
+
+
+.sobre p {
+  margin-bottom: 1em;
+  text-indent: 2em;
+  font-size: 0.9em;
 }
 
 .sobre h4{
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-family: 'Source Code Pro', monospace;
 }
 
@@ -147,6 +156,121 @@ header div{
 .sobre li {
   font-size: 0.9em;
   list-style: none;
+}
+
+.sobre .avatar {
+  float: right;
+  border-radius: 50%;
+  margin-left: 3em;
+  margin-bottom: 2em;
+}
+
+.sobre .avatar img{
+  /* position: absolute; */
+  width: 12em;
+  height: 12em;
+  box-shadow: 20px 5px 4px rgb(10, 10, 10);
+  border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.7s;
+  animation-name: fadeIn;
+  animation-duration: 0.7s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  left: 15vw;
+  right: 15vw;
+  bottom: 50vh;
+  background-color: beige;
+  width: 75%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.7s;
+  animation-name: slideIn;
+  animation-duration: 0.7s
+}
+
+/* The Close Button */
+.close {
+  color: rgb(158, 153, 7);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(228, 206, 7);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 1px 16px;
+  background-color: rgba(40, 40, 40);
+  color: rgb(240, 216, 8);
+}
+
+.modal-header p{
+  padding-top: 20px;
+  font-size: 1.25em;
+}
+
+.modal-body {
+  padding: 16px 16px;
+}
+
+.modal-body p{
+  color: rgb(10, 10, 10);
+  font-size: 0.8em;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: calc(50vh - 100px);
+    opacity: 0
+  } 
+  to {
+    bottom: 50vh; 
+    opacity: 1
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: calc(50vh - 300px);
+    opacity: 0
+  } 
+  to {
+    bottom: 50vh; 
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
 
 .projetos{
@@ -163,8 +287,8 @@ header div{
 .sobre h2,
 .contato h2,
 .projetos h2{
-  color: #F0DB4F;
-  margin-bottom: 1em;
+  color: rgb(228, 206, 7);
+  margin-bottom: 0.5em;
   font-size: 2em;
 }
 
@@ -200,7 +324,7 @@ header div{
 }
 
 .contato {
-  background-color: rgba(21, 21, 21);
+  background-color: rgba(20, 20, 20);
   padding: 1em 2em;
   max-height: 50vh;
 }
