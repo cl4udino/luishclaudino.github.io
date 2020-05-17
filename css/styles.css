@@ -173,6 +173,77 @@ header div{
   border-radius: 50%;
 }
 
+.sobre button{
+  background-color: rgba(25, 25, 25); /* rgba(25, 25, 25) */
+  border: 2px solid rgb(228, 206, 7);
+  border-radius: 10px;
+  color: rgb(228, 206, 7);
+  padding: 0.4em 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  transition: background-color 300ms;
+}
+
+.sobre button:hover{
+  color: rgba(25, 25, 25);
+  background-color: rgb(228, 206, 7);
+  cursor: pointer;
+}
+
+.sobre .conhecimento{
+  padding: 1.5em 0 0.5em 2em;
+}
+
+.conhecimento i{
+  font-size: 2.5em;
+  padding: 2em 0.1em;
+}
+
+.sobre .barra {
+  width: 65%;
+  background-color: rgb(179, 178, 178);
+  border-radius: 15px;
+  margin: 5px 0 25px 0;
+}
+
+.sobre .skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  color: white;
+}
+
+.python {
+  width: 95%; 
+  background-color: rgb(241, 218, 8);
+}
+.git {
+  width: 65%; 
+  background-color: #f14f29;
+}
+
+.html5 {
+  width: 60%; 
+  background-color: #e54d27;
+}
+
+.css3 {
+  width: 30%; 
+  background-color: #3d8ec6;
+}
+
+.js {
+  width: 30%; 
+  background-color: #f0db50;
+}
+
+.sobre #languages {
+  font-size: 2em;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -186,9 +257,9 @@ header div{
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.7s;
+  -webkit-animation-duration: 0.5s;
   animation-name: fadeIn;
-  animation-duration: 0.7s
+  animation-duration: 0.5s
 }
 
 /* Modal Content */
@@ -200,9 +271,9 @@ header div{
   background-color: beige;
   width: 75%;
   -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.7s;
+  -webkit-animation-duration: 0.5s;
   animation-name: slideIn;
-  animation-duration: 0.7s
+  animation-duration: 0.5s
 }
 
 /* The Close Button */
@@ -235,9 +306,24 @@ header div{
   padding: 16px 16px;
 }
 
-.modal-body p{
+.modal-body h4 {
   color: rgb(10, 10, 10);
-  font-size: 0.8em;
+  font-size: 1em;
+}
+
+.modal-body ul{
+  color: rgb(10, 10, 10);
+  font-size: 0.7em;
+}
+
+.modal-body i{
+  font-size: 1.5em;
+  color: black;
+}
+
+.modal-body i:hover{
+  color: rgb(228, 206, 7);
+  cursor: pointer;
 }
 
 /* Add Animation */
@@ -288,6 +374,7 @@ header div{
 .contato h2,
 .projetos h2{
   color: rgb(228, 206, 7);
+  margin-top: 0.25em;
   margin-bottom: 0.5em;
   font-size: 2em;
 }
@@ -325,24 +412,55 @@ header div{
 
 .contato {
   background-color: rgba(20, 20, 20);
-  padding: 1em 2em;
-  max-height: 50vh;
+  padding: 2em 2em;
+  height: 90vh;
 }
 
-.contato a{
+.contato .icons{
+  display: grid;
+  gap: 2vw;
+  margin: 3em;
+  justify-content: space-around;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
   color: whitesmoke;
-  font-size: 2.5em;
+  align-self: center;
+  justify-self: center;
+}
+
+.contato .icon{
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  padding: 1em;
+  margin: 0 0.5em;
+  text-align: center;
+}
+
+.contato .icon a {
+  font-size: 4em;
+  color: whitesmoke;
   text-decoration: none;
   transition: text-shadow 300ms;
 }
 
-.contato a:active,
-.contato a:hover{
+.contato .icon p {
+  padding-top: 0.25em;
+  font-size: 1em;
+}
+
+.contato .icon a:active,
+.contato .icon a:hover{
   text-decoration: none;
   color: #F0DB4F;
   text-shadow: 0px 0px 50px rgb(212, 189, 38);
 }
 
-.contato .icons{
-  text-align: center;
+footer{
+  display: flex;
+  align-items: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.75em;
+  justify-content: center;
+  height: 10vh;
+  background-color: rgb(228, 206, 7);
 }
