@@ -3,17 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto&family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <title>Luís Henrique Claudino Silva</title>
         <script src="https://kit.fontawesome.com/0bf10533c2.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     </head>
     <body>
-        <header>
+
+        <header id="home">
             <nav class="menu">
                 <ul>
-                    <li> <a href="/">Home</a> </li>
+                    <li> <a href="#home">Home</a> </li>
                     <li> <a href="#sobre">Sobre</a> </li>
                     <li> <a href="#projetos">Projetos</a> </li>
                     <li> <a href="#contato">Contato</a> </li>
@@ -24,6 +26,7 @@
                 <h2 class="site-subtitle">Python Developer</h2>
             </div>
         </header>
+
         <section class="sobre" id="sobre">
             <h2>Sobre</h2>
 
@@ -32,7 +35,9 @@
             </figure>
             <p>
                 Sou um apaixonado por computação, que adora experimentar novas tecnologias e aprender algo novo todos os dias.
-                Persistente na busca dos meus objetivos e aberto para ajudar os outros no que for possível.
+                Persistente na busca dos meus objetivos e aberto para ajudar os outros no que for possível. 
+                No momento meu conhecimento está mais focado em Python que é uma linguagem que tenho utilizado desde 2015 em meus projetos acadêmicos, 
+                mas tenho estudado um pouco de desenvolvimento web nas horas vagas.
             </p>
             <h4>Formação</h4>
             <ul>
@@ -56,10 +61,16 @@
                         <h4>Git e Github</h4>
                         <ul>
                             <li>
-                                Controle e Compartilhe seu código. <a href="https://cursos.alura.com.br/user/luishclaudino/course/git-github-controle-de-versao/certificate" target="_blank"><i class="fas fa-file-alt"></i></a>
+                                Controle e Compartilhe seu Código - Certificado: <a href="https://cursos.alura.com.br/user/luishclaudino/course/git-github-controle-de-versao/certificate" target="_blank"><i class="fas fa-file-alt"></i></a>
                             </li>
                             <li>
-                                Estratégias de Ramificação, Conflitos e Pull Requests. <a href="https://cursos.alura.com.br/user/luishclaudino/course/git-github-branching-conflitos-pull-requests/certificate" target="_blank"><i class="fas fa-file-alt"></i></a>
+                                Estratégias de Ramificação, Conflitos e Pull Requests - Certificado: <a href="https://cursos.alura.com.br/user/luishclaudino/course/git-github-branching-conflitos-pull-requests/certificate" target="_blank"><i class="fas fa-file-alt"></i></a>
+                            </li>
+                        </ul>
+                        <h4>Python</h4>
+                        <ul>
+                            <li>
+                                Formação Python - Certificado: <a href="https://cursos.alura.com.br/degree/certificate/45734ada-258a-4897-8981-47076a0a01f3" target="_blank"><i class="fas fa-file-alt"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -68,33 +79,52 @@
 
             <h4>Conhecimento de Linguagens</h4>
             <div class="conhecimento">
-                <i class="devicon-python-plain"></i>
-                <div class="barra">
-                    <div class="skills python"></div>
+                <div class="conhecimento-div">
+                    <i class="devicon-python-plain"></i>
+                    <div class="barra">
+                        <div class="skills python"></div>
+                    </div>
                 </div>
-                <i class="devicon-git-plain colored"></i>
-                <div class="barra">
-                    <div class="skills git"></div>
+                <div class="conhecimento-div">
+                    <i class="devicon-git-plain colored"></i>
+                    <div class="barra">
+                        <div class="skills git"></div>
+                    </div>
                 </div>
-                <i class="devicon-html5-plain colored"></i>
-                <div class="barra">
-                    <div class="skills html5"></div>
+                <div class="conhecimento-div">
+                    <i class="devicon-html5-plain colored"></i>
+                    <div class="barra">
+                        <div class="skills html5"></div>
+                    </div>
                 </div>
-                <i class="devicon-css3-plain colored"></i>
-                <div class="barra">
-                    <div class="skills css3"></div>
+                <div class="conhecimento-div">
+                    <i class="devicon-css3-plain colored"></i>
+                    <div class="barra">
+                        <div class="skills css3"></div>
+                    </div>
                 </div>
-                <i class="devicon-javascript-plain colored"></i>
-                <div class="barra">
-                    <div class="skills js"></div>
+                <div class="conhecimento-div">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <div class="barra">
+                        <div class="skills js"></div>
+                    </div>
                 </div>
             </div>
 
         </section>
+
         <section class="projetos" id="projetos">
             <h2>Projetos</h2>
 
-            <div class="grid">
+            <div class="projetos-pessoais">
+                <div class="projeto-image">
+                    <img src="/img/devradar.png">
+                </div>
+                <div class="projeto-description">
+                </div>
+            </div>
+
+            <!-- <div class="grid">
                 <figure>
                     <img class="img-projetos" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
                     <figcaption>eCommerce</figcaption>
@@ -111,8 +141,9 @@
                     <img class="img-projetos" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
                     <figcaption>Projetos pessoais</figcaption>
                 </figure>
-            </div>
+            </div> -->
         </section>
+
         <section class="contato" id="contato">
             <h2>Contato</h2>
             <div class="icons">

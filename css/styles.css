@@ -6,6 +6,7 @@ font-family: 'Source Code Pro', monospace; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
   
 body {
@@ -99,6 +100,7 @@ header div{
 .menu a:hover {
   background-color: rgba(30, 30, 30);
   color: rgb(228, 206, 7);
+  cursor: pointer;
 }
 
 .site-title {
@@ -193,19 +195,28 @@ header div{
 }
 
 .sobre .conhecimento{
-  padding: 1.5em 0 0.5em 2em;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+.conhecimento-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .conhecimento i{
   font-size: 2.5em;
-  padding: 2em 0.1em;
+  padding: 0.25em 0.25em;
+  margin-right: 0.5em;
 }
+
 
 .sobre .barra {
   width: 65%;
+  height: 50%;
   background-color: rgb(179, 178, 178);
   border-radius: 15px;
-  margin: 5px 0 25px 0;
+  margin: 5px 0 5px 0;
 }
 
 .sobre .skills {
@@ -217,16 +228,16 @@ header div{
 }
 
 .python {
-  width: 95%; 
+  width: 85%; 
   background-color: rgb(241, 218, 8);
 }
 .git {
-  width: 65%; 
+  width: 55%; 
   background-color: #f14f29;
 }
 
 .html5 {
-  width: 60%; 
+  width: 45%; 
   background-color: #e54d27;
 }
 
@@ -280,7 +291,8 @@ header div{
 .close {
   color: rgb(158, 153, 7);
   float: right;
-  font-size: 28px;
+  padding: 0.5em 0.25em;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -308,16 +320,16 @@ header div{
 
 .modal-body h4 {
   color: rgb(10, 10, 10);
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .modal-body ul{
   color: rgb(10, 10, 10);
-  font-size: 0.7em;
+  font-size: 0.75em;
 }
 
 .modal-body i{
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: black;
 }
 
@@ -377,6 +389,22 @@ header div{
   margin-top: 0.25em;
   margin-bottom: 0.5em;
   font-size: 2em;
+}
+
+.projeto-image{
+   padding: 30px;
+}
+
+.projeto-image img{
+  display: flex;
+  padding: 40px;
+  margin: 20px;
+  background-color: beige;
+  height: 400px;
+  width: 774px;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 20px rgba(20, 20, 20);
 }
 
 .projetos .grid {
