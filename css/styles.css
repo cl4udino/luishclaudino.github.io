@@ -458,7 +458,6 @@ header div{
 .contato .icon{
   display: flex;
   flex-direction: column;
-  /* background-color: blue; */
   padding: 1em;
   margin: 0 0.5em;
   text-align: center;
