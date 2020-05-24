@@ -76,7 +76,7 @@ header div{
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu ul {
@@ -278,7 +278,7 @@ header div{
   position: fixed;
   left: 15vw;
   right: 15vw;
-  bottom: 50vh;
+  bottom: 42.5vh;
   background-color: beige;
   width: 75%;
   -webkit-animation-name: slideIn;
@@ -341,22 +341,22 @@ header div{
 /* Add Animation */
 @-webkit-keyframes slideIn {
   from {
-    bottom: calc(50vh - 100px);
+    bottom: calc(42.5vh - 300px);
     opacity: 0
   } 
   to {
-    bottom: 50vh; 
+    bottom: 42.5vh; 
     opacity: 1
   }
 }
 
 @keyframes slideIn {
   from {
-    bottom: calc(50vh - 300px);
+    bottom: calc(42.5vh - 300px);
     opacity: 0
   } 
   to {
-    bottom: 50vh; 
+    bottom: 42.5vh; 
     opacity: 1
   }
 }
@@ -373,13 +373,12 @@ header div{
 
 .projetos{
   background-image: url('../img/lampada2.png');
+  background-position: right -220px bottom -10px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right -150px top 10px;
+  background-size: 40%;
   background-color: rgba(30, 30, 30);
   color: beige;
   padding: 2em 2em;
-  min-height: 100vh;
 }
 
 .sobre h2,
@@ -391,51 +390,103 @@ header div{
   font-size: 2em;
 }
 
-.projeto-image{
-   padding: 30px;
+.projetos .slider-elements{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
-.projeto-image img{
+.projetos .fas{
+  font-size: 50px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+
+.slider{
+  /* display: block; */
+  height: 500px;
+  width: 900px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  /* position: relative; */
+}
+
+.slider .slider-box {
   display: flex;
+  align-items: center;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider input {
+  display: none;
+}
+
+.projeto-image{
+  position: relative;
+  /* padding-top: 50px; */
+  margin: 50px;
+  height: 436px;
+  width: 820px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ .projeto-image {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.cover-img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 40px;
-  margin: 20px;
-  background-color: beige;
-  height: 400px;
-  width: 774px;
-  justify-content: center;
+  width:100%;
+  height:100%;
+  background-color: whitesmoke;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 20px rgba(20, 20, 20);
 }
 
-.projetos .grid {
-  display: grid;
-  gap: 1.5em;
-  justify-content: center;
+.projeto-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  width:100%;
+  height:100%;
+  color: rgba(20, 20, 20);
+  background-color: whitesmoke;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 20px;
+
+  transition: opacity .35s, visibility .35s;
 }
 
-@media (min-width: 580px){
-  .projetos{
-    background-position: right -220px bottom -10px;
-  }
-
-  .projetos .grid {
-    grid-template-columns: 240px 240px;
-  }
+.projeto-image:hover .projeto-description{
+  visibility: visible;
+  opacity: 1;
 }
 
-.projetos figure {
-  text-align: center;
+.projeto-description a{
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
 }
 
-.img-projetos {
-  height: 180px;
-  width: 180px;
-  object-fit: cover;
-  transition: transfom 500ms;
-}
-
-.img-projetos:hover {
-  transform: scale(1.10);
+.projeto-description img {
+  height: 63px;
 }
 
 .contato {

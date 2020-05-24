@@ -36,7 +36,7 @@
             <p>
                 Sou um apaixonado por computação, que adora experimentar novas tecnologias e aprender algo novo todos os dias.
                 Persistente na busca dos meus objetivos e aberto para ajudar os outros no que for possível. 
-                No momento meu conhecimento está mais focado em Python que é uma linguagem que tenho utilizado desde 2015 em meus projetos acadêmicos, 
+                No momento, meu conhecimento está mais focado em Python que é uma linguagem que tenho utilizado desde 2015 em meus projetos acadêmicos, 
                 mas tenho estudado um pouco de desenvolvimento web nas horas vagas.
             </p>
             <h4>Formação</h4>
@@ -115,33 +115,42 @@
 
         <section class="projetos" id="projetos">
             <h2>Projetos</h2>
-
-            <div class="projetos-pessoais">
-                <div class="projeto-image">
-                    <img src="/img/devradar.png">
-                </div>
-                <div class="projeto-description">
-                </div>
+            <div class="slider-elements">
+                <i class="fas fa-arrow-alt-circle-left" id="left" onclick=""></i>
+                <ul class="slider">
+                    <div class="projetos-pessoais">
+                        <li>
+                            <input type="radio" name="slide" checked>
+                            <div class="projeto-image">
+                                <img src="/img/devradar.png" class="cover-img">
+                                    <div class="projeto-description">
+                                        <img src="/img/devradar.svg"></img> <br>
+                                        DevRadar é um projeto que visa conectar desenvolvedores próximos a você que trabalham com as mesmas tecnologias. <br>
+                                        Criado durante a Semana Omnistack 10. <br>
+                                        Tecnologias utilizadas: ReactJS, Node.js e React Native <br> 
+                                        Acesse aqui: <a href="https://github.com/luishclaudino/DevRadar" target="_blank"><i class="fab fa-github-square"></i></a>
+                                    </div>
+                                </img>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="slide">
+                            <div class="projeto-image">
+                                <img src="/img/bethehero.png" class="cover-img">
+                                    <div class="projeto-description">
+                                        <img src="/img/bethehero.svg"></img> <br>
+                                        O BeTheHero é uma plataforma simples para que ONGs se cadastrem e criem casos para que usuários caridosos entrem em contato por email ou whatsapp com ONG querendo ajudar. <br>
+                                        Criado durante a Semana Omnistack 11. <br>
+                                        Tecnologias utilizadas: ReactJS, Node.js e React Native <br> 
+                                        Acesse aqui: <a href="https://github.com/luishclaudino/be-the-hero" target="_blank"><i class="fab fa-github-square"></i></a>
+                                    </div>
+                                </img>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <i class="fas fa-arrow-alt-circle-right" id="right"></i>
             </div>
-
-            <!-- <div class="grid">
-                <figure>
-                    <img class="img-projetos" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-                    <figcaption>eCommerce</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-projetos" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-                    <figcaption>Mobile</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-projetos" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-                    <figcaption>Web design</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-projetos" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-                    <figcaption>Projetos pessoais</figcaption>
-                </figure>
-            </div> -->
         </section>
 
         <section class="contato" id="contato">
