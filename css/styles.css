@@ -91,7 +91,7 @@ header div{
 .menu a {
   color: rgba(30, 30, 30);
   display: block;
-  padding: 10px;
+  padding: 10px 50px;
   text-decoration: none;
   transition: background-color 300ms;
 }
